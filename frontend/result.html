@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Result</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Test Completed 🎉</h1>
+
+<div class="result-card">
+
+<h2 id="ability"></h2>
+
+<h3>Study Plan</h3>
+
+<p id="plan"></p>
+
+</div>
+
+</div>
+
+<script>
+
+const ability = localStorage.getItem("ability_score")
+const plan = localStorage.getItem("study_plan")
+
+document.getElementById("ability").innerText =
+"Ability Score: " + ability
+
+document.getElementById("plan").innerText = plan
+
+</script>
+
+</body>
+</html>
